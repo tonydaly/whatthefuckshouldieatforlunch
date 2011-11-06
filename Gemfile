@@ -12,9 +12,10 @@ end
 
 gem 'jquery-rails'
 gem 'coffee-script'
+gem 'eco'
+gem 'spine-rails'
 gem 'haml'
 gem 'oauth'
 
 # To use debugger
 gem 'ruby-debug19', :require => 'ruby-debug'
-
