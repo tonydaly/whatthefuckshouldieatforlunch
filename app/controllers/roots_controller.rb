@@ -2,8 +2,6 @@ class RootsController < ApplicationController
   respond_to :json, :html
 
   def index
-    @businesses = $yelp.find(category_filter: "restaurants", location: "london").businesses.shuffle
-    respond_with(@businesses)
   end
 
   def create
@@ -11,6 +9,6 @@ class RootsController < ApplicationController
       category_filter: "restaurants", 
       ll: params.values.join(','))
 
-    respond_with(response.businesses.shuffle, location: nil)
+    respond_with(response.businesses.shuffle, location: nil, status: 200)
   end
 end
