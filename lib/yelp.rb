@@ -18,7 +18,7 @@ module Yelp
       end.join("&")
 
       path = URI.escape "/v2/search?#{options}"
-      response = Yelp::Response.new @access_token.get(path).body
+      Yelp::Response.new @access_token.get(path).body
     end
   end
 
@@ -42,6 +42,10 @@ module Yelp
     def initialize(name, url)
        @name = name
        @url = url
+    end
+
+    def model_name
+      "Business"
     end
   end
 end

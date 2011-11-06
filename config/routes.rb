@@ -1,3 +1,4 @@
 Whatthefuckshouldieatforlunch::Application.routes.draw do
-  root :to => 'root#index'
+  root :to => 'roots#index'
+  resource :root
 end

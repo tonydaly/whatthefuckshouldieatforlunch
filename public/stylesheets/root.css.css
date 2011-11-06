@@ -1,0 +1,14 @@
+/* line 1, ../../app/assets/stylesheets/root.css.sass */
+.container {
+  padding-top: 50px;
+}
+/* line 4, ../../app/assets/stylesheets/root.css.sass */
+.container h1 {
+  text-transform: uppercase;
+  line-height: 60px;
+  color: black;
+  margin-bottom: 1em;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 60px;
+  font-weight: 800;
+}

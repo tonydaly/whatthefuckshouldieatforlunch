@@ -13,6 +13,7 @@ end
 
 gem 'jquery-rails'
 gem 'coffee-script'
+gem 'coffee-filter'
 gem 'haml'
 gem 'oauth'
 
