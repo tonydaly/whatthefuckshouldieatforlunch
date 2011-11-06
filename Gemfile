@@ -17,6 +17,7 @@ gem 'coffee-filter'
 gem 'haml'
 gem 'oauth'
 
-# To use debugger
-gem 'ruby-debug19', :require => 'ruby-debug'
+group :development do
+  gem 'ruby-debug19', :require => 'ruby-debug'
+end
 
