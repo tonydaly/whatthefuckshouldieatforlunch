@@ -1,8 +1,13 @@
 %section
   %h1 Go to the fucking
+  %article
+    %h1
 
 = link_to '/' do
   %h2 I don't fucking like that
 
 :coffeescript
   lunch = new Lunch
+  $('.container a').click (e) ->
+    e.preventDefault()
+    lunch.suggestion()

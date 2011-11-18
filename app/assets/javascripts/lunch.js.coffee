@@ -2,6 +2,7 @@ window.Lunch = class Lunch
 
   constructor: (args) ->
     @businesses = []
+    @count = 0
 
     if (navigator.geolocation)
       navigator.geolocation.getCurrentPosition (position) =>
@@ -21,7 +22,7 @@ window.Lunch = class Lunch
       alert("I'm sorry, but geolocation services are not supported by your browser.");
     
   addToView: ->
-    business = @businesses[0]
+    business = @businesses[@count]
     view = {
       name: business.name,
       url: business.url
@@ -30,5 +31,9 @@ window.Lunch = class Lunch
     template = "<h1><a href='{{url}}' target='_blank'>{{name}}</a></h1>"
 
     html = Mustache.to_html(template, view)
-    $('.container section').append(html)
+    $('article h1').replaceWith(html)
     $('.container').show()
+  
+  suggestion: ->
+    @count++
+    @addToView()

@@ -17,6 +17,6 @@
   font-weight: 800;
 }
 /* line 17, ../../app/assets/stylesheets/root.css.sass */
-.container a {
+.container a, .container a:hover {
   color: black;
 }
