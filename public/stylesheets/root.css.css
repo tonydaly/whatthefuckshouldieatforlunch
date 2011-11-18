@@ -1,14 +1,22 @@
 /* line 1, ../../app/assets/stylesheets/root.css.sass */
 .container {
   padding-top: 50px;
+  display: none;
 }
-/* line 4, ../../app/assets/stylesheets/root.css.sass */
-.container h1 {
+/* line 5, ../../app/assets/stylesheets/root.css.sass */
+.container h1, .container h2 {
   text-transform: uppercase;
+  font-family: Helvetica, Arial, sans-serif;
+}
+/* line 9, ../../app/assets/stylesheets/root.css.sass */
+.container h1 {
   line-height: 60px;
   color: black;
   margin-bottom: 1em;
-  font-family: Helvetica, Arial, sans-serif;
   font-size: 60px;
   font-weight: 800;
+}
+/* line 17, ../../app/assets/stylesheets/root.css.sass */
+.container a {
+  color: black;
 }

@@ -30,4 +30,5 @@ window.Lunch = class Lunch
     template = "<h1><a href='{{url}}' target='_blank'>{{name}}</a></h1>"
 
     html = Mustache.to_html(template, view)
-    $('.container').append(html)
+    $('.container section').append(html)
+    $('.container').show()
