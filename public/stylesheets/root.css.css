@@ -20,3 +20,21 @@
 .container a, .container a:hover {
   color: black;
 }
+
+/* line 21, ../../app/assets/stylesheets/root.css.sass */
+body footer {
+  border: none;
+  position: fixed;
+  bottom: 5px;
+  right: 25px;
+}
+/* line 26, ../../app/assets/stylesheets/root.css.sass */
+body footer a {
+  color: black;
+}
+/* line 28, ../../app/assets/stylesheets/root.css.sass */
+body footer img {
+  position: fixed;
+  bottom: 5px;
+  left: 25px;
+}
